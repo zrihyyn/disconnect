@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Director";
+  word-spacing: 1px;
+}
+
+@font-face {
+  font-family: "Director";
+  src: url("https://hub.xpub.nl/chopchop/~v/hdwgh/fonts/Director-Light.otf");
+}
+::-webkit-scrollbar {
+  visibility: hidden;
+}
+
+body {
+  background-color: rgb(158, 181, 193);
+  word-break: keep-all;
+}
+
+#container {
+  min-width: 40px;
+  max-width: 45rem;
+  margin: 0 auto;
+  display: grid;
+}
+
+#header {
+  padding: 50px 0 50px 0;
+  height: auto;
+  text-align: center;
+  font-size: 15px;
+}
+
+h1 {
+  font-size: 35px;
+  line-height: 75px;
+  text-align: center;
+}
+
+.article {
+  height: auto;
+  overflow: hidden;
+  border-top: 1px black solid;
+  padding: 50px 0;
+  margin: 0 10px;
+}
+
+.a_title {
+  margin-bottom: 50px;
+  font-size: 25px;
+  line-height: 40px;
+}
+
+.a_text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.a_text p {
+  font-size: 16px;
+  line-height: 29px;
+  margin-top: 20px;
+  align-self: flex-start;
+}
+.a_text img {
+  position: relative;
+  margin: 18px 0;
+  max-width: 400px;
+  align-self: center;
+}
+.a_text a {
+  color: rgb(158, 181, 193);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.a_etc {
+  display: block;
+}
+.a_etc p {
+  font-size: 10px;
+  line-height: 20px;
+  margin: 30px 0 0 0;
+}
+
+.date {
+  float: right;
+  padding: 5px 10px 5px 10px;
+}
+
+@media (max-width: 767px) {
+  * {
+    word-spacing: -1px;
+  }
+  #header {
+    padding: 30px 0 30px 0;
+    font-size: 14px;
+  }
+  h1 {
+    font-size: 30px;
+    line-height: 50px;
+    font-weight: 100;
+  }
+  .article {
+    padding: 50px 0;
+    margin: 0 40px;
+  }
+  .a_title {
+    margin-bottom: 30px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .a_text p {
+    font-size: 14px;
+    line-height: 29px;
+    margin-top: 15px;
+  }
+  .a_text img {
+    max-width: 80%;
+  }
+  .a_etc p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}/*# sourceMappingURL=style1.css.map */
