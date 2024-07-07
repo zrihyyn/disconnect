@@ -74,10 +74,17 @@ h1{
 
         img {
             max-width: 400px;
-            margin: 20px;
+            margin-top: 20px;
             align-self: center;
         }
 
+        figcaption {
+            font-size: 14px;
+            line-height: 30px;
+            color: gray;
+            margin-top: 10px;
+            text-align: center;
+        }
 
     a {
         color: $primary;
@@ -137,7 +144,14 @@ h1{
 
         img {
             max-width: 70%;
-            margin: 20px;
+            margin-top: 20px;
+        }
+        figcaption {
+            font-size: 14px;
+            line-height: 30px;
+            color: gray;
+            margin-top: 10px;
+            text-align: center;
         }
     }
 

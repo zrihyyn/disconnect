@@ -70,7 +70,15 @@ h1 {
 }
 .a_text img {
   max-width: 400px;
+  margin-top: 20px;
   align-self: center;
+}
+.a_text figcaption {
+  font-size: 14px;
+  line-height: 30px;
+  color: gray;
+  margin-top: 10px;
+  text-align: center;
 }
 .a_text a {
   color: rgb(158, 181, 193);
@@ -122,7 +130,15 @@ h1 {
     margin-top: 15px;
   }
   .a_text img {
-    max-width: 80%;
+    max-width: 70%;
+    margin-top: 20px;
+  }
+  .a_text figcaption {
+    font-size: 14px;
+    line-height: 30px;
+    color: gray;
+    margin-top: 10px;
+    text-align: center;
   }
   .a_etc p {
     font-size: 12px;
