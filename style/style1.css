@@ -69,8 +69,6 @@ h1 {
   align-self: flex-start;
 }
 .a_text img {
-  position: relative;
-  margin: 18px 0;
   max-width: 400px;
   align-self: center;
 }

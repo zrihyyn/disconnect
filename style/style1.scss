@@ -20,6 +20,7 @@ $primary: rgb(158, 181, 193);
 body{
     background-color:$primary;
     word-break: keep-all;
+
 }
 
 #container{
@@ -71,12 +72,11 @@ h1{
         align-self: flex-start;
     }
 
-    img {
-        position: relative;
-        margin: 18px 0;
-        max-width: 400px;
-        align-self: center;
-    }
+        img {
+            max-width: 400px;
+            align-self: center;
+        }
+
 
     a {
         color: $primary;
