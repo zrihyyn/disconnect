@@ -71,7 +71,10 @@ h1{
         margin-top: 20px;
         align-self: flex-start;
     }
-
+#highlight{
+    border: 1px black dotted;
+    padding: 0.7rem 1rem;
+}
         img {
             max-width: 400px;
             margin-top: 20px;
