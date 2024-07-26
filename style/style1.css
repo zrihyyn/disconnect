@@ -129,24 +129,24 @@ h1 {
     line-height: 30px;
   }
   .a_text p {
-    font-size: 14px;
-    line-height: 29px;
-    margin-top: 15px;
+    font-size: 0.875rem;
+    line-height: 1.8125rem;
+    margin-top: 0.9375rem;
   }
   .a_text img {
     max-width: 70%;
     margin-top: 20px;
   }
   .a_text figcaption {
-    font-size: 12px;
-    line-height: 25px;
+    font-size: 0.75rem;
+    line-height: 1.5625rem;
     color: rgb(84, 103, 113);
     margin-top: 10px;
     text-align: center;
     width: 80vw;
   }
   .a_etc p {
-    font-size: 12px;
-    line-height: 18px;
+    font-size: 0.75rem;
+    line-height: 1.125rem;
   }
 }/*# sourceMappingURL=style1.css.map */
