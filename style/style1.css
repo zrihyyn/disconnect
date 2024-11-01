@@ -28,10 +28,26 @@ body {
 }
 
 #header {
-  padding: 50px 0 50px 0;
-  height: auto;
+  position: relative;
+  padding: 50px 0;
   text-align: center;
   font-size: 15px;
+}
+
+#commentButton {
+  position: absolute;
+  top: 15%;
+  right: 10px;
+  width: 25px;
+  height: 25px;
+  background-color: #000;
+  border-radius: 50%;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+#commentButton:hover {
+  background-color: #333;
 }
 
 h1 {
@@ -150,4 +166,33 @@ h1 {
     font-size: 0.75rem;
     line-height: 1.125rem;
   }
+}
+#pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 2rem 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#pagination button {
+  background-color: transparent;
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 0.5rem 0.5rem;
+  font-size: 0.8rem;
+  border-radius: 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+#pagination button:hover {
+  background-color: #ffffff;
+}
+#pagination button:disabled {
+  background-color: #e0e5e8;
+  cursor: not-allowed;
+}
+#pagination #pageNumber {
+  font-size: 1rem;
+  color: #333;
 }/*# sourceMappingURL=style1.css.map */

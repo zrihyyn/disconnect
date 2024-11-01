@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: rgb(149, 186, 101);
+  word-break: keep-all;
+  display: flex; /* Flexbox 사용 */
+  justify-content: center; /* 수평 중앙 정렬 */
+  align-items: center; /* 수직 중앙 정렬 */
+  height: 100vh; /* 전체 높이 사용 */
+  transform: rotate(10deg);
+}
+
+#container {
+  max-width: 45rem;
+  padding: 20px;
+}
+
+#header {
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: 90px;
+  text-align: center;
+  font-weight: 100;
+  transform: rotate(20deg);
+}
+
+#content {
+  display: flex; /* Flexbox 사용 */
+  flex-direction: column; /* 세로 방향 정렬 */
+  align-items: center; /* 수평 중앙 정렬 */
+  text-align: center; /* 텍스트 중앙 정렬 */
+  margin-top: 20px; /* 상단 여백 */
+}
+
+h2 {
+  margin: 20px 0;
+}
+
+a {
+  color: rgb(155, 22, 167);
+  text-decoration: none;
+
+  &:hover {
+      text-decoration: underline;
+  }
+}

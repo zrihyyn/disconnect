@@ -31,10 +31,28 @@ body{
     display: grid;
 }
 #header {
-    padding: 50px 0 50px 0;
-    height: auto;
+    position: relative; // 버튼 배치에 필요한 위치 설정
+    padding: 50px 0;
     text-align: center;
     font-size: 15px;
+}
+
+// 코멘트 페이지 이동 버튼 스타일
+#commentButton {
+    position: absolute;
+    top: 15%;
+    right: 10px;
+    width: 25px;
+    height: 25px;
+    background-color: #000; // 기본 색상
+    border-radius: 50%; // 원형으로 만들기
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #333; // 호버 시 색상 변경
+    }
 }
 
 h1{
@@ -166,5 +184,38 @@ h1{
             font-size: 0.75rem;
             line-height: 1.125rem;
         }
+    }
+}
+#pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem; // 버튼 간격
+    margin: 2rem 0; // 위아래 여백
+    font-family: Arial, Helvetica, sans-serif;
+
+    button {
+        background-color: transparent; // 페이지네이션 버튼 색상
+        color: rgb(0, 0, 0);
+        border: none;
+        padding: 0.5rem 0.5rem;
+        font-size: 0.8rem;
+        border-radius: 0;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+            background-color: #ffffff; // 호버 시 어두워짐
+        }
+
+        &:disabled {
+            background-color: #e0e5e8; // 비활성화 시 색상
+            cursor: not-allowed;
+        }
+    }
+
+    #pageNumber {
+        font-size: 1rem;
+        color: #333; // 페이지 번호 색상
     }
 }
