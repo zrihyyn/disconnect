@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,18 +7,18 @@
 }
 
 body {
-  background-color: rgb(149, 186, 101);
+  background-color: rgb(183, 183, 183);
   word-break: keep-all;
   display: flex; /* Flexbox 사용 */
   justify-content: center; /* 수평 중앙 정렬 */
   align-items: center; /* 수직 중앙 정렬 */
   height: 100vh; /* 전체 높이 사용 */
-  transform: rotate(10deg);
 }
 
 #container {
   max-width: 45rem;
   padding: 20px;
+  width: 90%; /* 기본 너비 설정 */
 }
 
 #header {
@@ -48,8 +49,27 @@ h2 {
 a {
   color: rgb(155, 22, 167);
   text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
 
-  &:hover {
-      text-decoration: underline;
+/* 미디어 쿼리로 반응형 디자인 적용 */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem; /* 작은 화면에서 글자 크기 조정 */
+    line-height: 60px; /* 줄 높이 조정 */
+  }
+  #container {
+    padding: 15px; /* 패딩 조정 */
   }
 }
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.2rem; /* 모바일 화면에서 글자 크기 더 줄이기 */
+    line-height: 50px; /* 줄 높이 조정 */
+  }
+  a {
+    font-size: 0.9rem; /* 링크 글자 크기 조정 */
+  }
+}/*# sourceMappingURL=style2.css.map */
