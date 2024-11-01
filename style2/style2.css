@@ -66,7 +66,7 @@ a:hover {
 }
 @media (max-width: 480px) {
   h1 {
-    font-size: 1.2rem; /* 모바일 화면에서 글자 크기 더 줄이기 */
+    font-size: 0.9rem; /* 모바일 화면에서 글자 크기 더 줄이기 */
     line-height: 50px; /* 줄 높이 조정 */
   }
   a {
